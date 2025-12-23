@@ -1,0 +1,149 @@
+body{
+    background-color: #d9dfdb;
+}
+h1{
+    font-size:40px;
+}
+hr{
+    height:10px;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color:black
+}
+a:visited{
+    color:black;
+}
+a:hover{
+    color:rgb(95, 95, 241);
+}
+.container{
+    display:flex;
+    gap:35px;
+    align-items: center;
+}
+.container img{
+    width:120px;
+    height:120px;
+    margin-left: 20px;
+}
+.headerText{
+    margin-left: 5px;
+    margin-top: 0px;
+    float:left;
+}
+.hero-img{
+    width:80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.welcome{
+    padding-left:125px;
+}
+nav a{
+    padding: 60px;
+    font-weight:bold;
+}
+nav{
+    text-align: center;
+}
+.active{
+    text-decoration: underline overline;
+    }
+main{
+    padding-left:40px;
+}
+footer{
+    padding-left:40px;
+}
+.portfolio{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap:8px;
+}
+.photo img{
+    width:100%;
+    height:auto;
+    display:block;
+    object-fit: cover;
+    /*cursor: pointer;*/
+}
+.lightbox{
+    position:fixed;
+    width:100%;
+    height:100%;
+    /* display:flex; */
+    top:0;
+    left:0;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 9900;
+}
+.lightbox-active{
+    visibility: visible;
+    opacity:1;
+    display: flex;
+}
+.lightbox img{
+    max-width: 85%;
+    max-height: 85%;
+    border-radius: 5px;
+    box-shadow:0 0 20px rgba(250,250,250,0.5)
+}
+.photo img{
+    width:100%;
+    height:auto;
+    display:block;
+    cursor: pointer;
+}
+form label{
+    display:block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+} 
+form input{
+    display: block;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border: 2px solid rgb(41, 33, 95);
+}
+.data-section{
+    display:none;
+}
+.service-tabs .nav-link[aria-selected="true"]{
+    color:#d9dfdb;
+    background-color: black;
+}
+.service-tabs{
+    display:flex;
+    gap:70px;
+    margin-bottom: 20px;
+    /* justify-content:center; */
+    padding-bottom:50px;
+}
+.popup{
+    display:none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    width:50%;
+    height:50%;
+    transform: translate(-50%,-50%);
+    /* background-color: rgb(222, 235, 246); */
+    z-index: 9900;
+}
+.popup-content{
+    color: #d9dfdb;
+    background-color: rgb(41, 33, 95);
+    width:300px;
+    border-radius:15px;
+    text-align: center;
+    padding:10px;
+}
